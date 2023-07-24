@@ -3,3 +3,12 @@ body {
   background-color: #efefef;
   font: normal 13pt Arial;
 }
+
+h1 {
+  color: #333;
+}
+
+p {
+  background-color: #999;
+  padding: 10px;
+}

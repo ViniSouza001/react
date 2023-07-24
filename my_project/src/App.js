@@ -4,6 +4,7 @@ import './App.css';
 import HelloWorld from './components/HelloWorld'
 import SayMyName from './components/SayMyName.js'
 import Pessoa from './components/Pessoa.js'
+import List from './components/List'
 
 function App() {
   // aqui dentro da função ficará todo o código e a lógica
@@ -21,7 +22,7 @@ function App() {
         idade='18'
         profissao="Programador Jr"
       />
-
+      <List />
     </div>
   );
 }
