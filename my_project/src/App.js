@@ -2,27 +2,26 @@
 
 import './App.css';
 import HelloWorld from './components/HelloWorld'
+import SayMyName from './components/SayMyName.js'
+import Pessoa from './components/Pessoa.js'
 
 function App() {
-
   // aqui dentro da função ficará todo o código e a lógica
-  const idade = 31
-  var nome = "Vinicius"
 
-  function sum(a, b) {
-    return a + b
-  }
-
-  const url = "https://via.placeholder.com/180"
+  const nome = "Mateuzin"
 
   return (
     <div className='App'>
-      <h1>Olá React!</h1>
-      <p>Seja bem vindo {nome}</p>
-      <p>Você possui {idade} anos</p>
-      <p>Soma: {sum(1, 2)}</p>
-      <img src={url} alt="Minha imagem"/>
       <HelloWorld />
+      <SayMyName nome="Vinicius" />
+      <SayMyName nome={nome} />
+      <Pessoa
+        foto="https://conteudo.imguol.com.br/c/noticias/2015/04/09/9abr2015---hamster-sirio-mesocricetus-auratus-1428629091243_300x300.jpg.webp"
+        nome="Vinicius"
+        idade='18'
+        profissao="Programador Jr"
+      />
+
     </div>
   );
 }
