@@ -8,3 +8,14 @@
     background-color: #333;
     margin: 0;
 }
+
+.button {
+    padding: 15px 5px;
+    background-color: #ffa500;
+    font: normal 11pt Arial;
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
