@@ -1,19 +1,18 @@
 // essa parte fora da função servirá apenas para importar componentes
 
 import './App.css';
-import Evento from './components/Evento'
-import Form from './components/Form'
-import Condicional from './components/Condicional';
+import OutraLista from './components/OutraLista';
 
 function App () {
   // aqui dentro da função ficará todo o código e a lógica
 
-  const nome = "Mateuzin"
+  const meusItens = ["React", "Vue", "Angular"]
 
   return (
     <div className='App'>
-      <h1>Renderização condicional</h1>
-      <Condicional />
+      <h1>Renderização de listas</h1>
+      <OutraLista itens={meusItens} />
+      <OutraLista itens={[]} />
     </div>
   );
 }
