@@ -1,18 +1,19 @@
 // essa parte fora da função servirá apenas para importar componentes
 
 import './App.css';
-import OutraLista from './components/OutraLista';
+import { useState } from 'react';
+import SeuNome from './components/SeuNome';
+import Saudacao from './components/Saudacao';
 
 function App () {
   // aqui dentro da função ficará todo o código e a lógica
-
-  const meusItens = ["React", "Vue", "Angular"]
+  const [nome, setNome] = useState()
 
   return (
     <div className='App'>
-      <h1>Renderização de listas</h1>
-      <OutraLista itens={meusItens} />
-      <OutraLista itens={[]} />
+      <h1>State Lift</h1>
+      <SeuNome setNome={setNome} />
+      <Saudacao nome={nome} />
     </div>
   );
 }
