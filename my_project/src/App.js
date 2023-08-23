@@ -1,20 +1,24 @@
 // essa parte fora da função servirá apenas para importar componentes
 
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home';
+import Contatos from './pages/Contatos';
+import Empresa from './pages/Empresas';
+import NavBar from './components/layout/NavBar';
+import Footer from './components/layout/Footer';
 import './App.css';
-import { useState } from 'react';
-import SeuNome from './components/SeuNome';
-import Saudacao from './components/Saudacao';
-
 function App () {
-  // aqui dentro da função ficará todo o código e a lógica
-  const [nome, setNome] = useState()
 
   return (
-    <div className='App'>
-      <h1>State Lift</h1>
-      <SeuNome setNome={setNome} />
-      <Saudacao nome={nome} />
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/empresa" element={<Empresa />} />
+        <Route path='/contatos' element={<Contatos />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
