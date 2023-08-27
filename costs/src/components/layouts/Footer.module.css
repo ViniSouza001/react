@@ -28,6 +28,10 @@
    cursor: pointer;
 }
 
+.social_list svg:hover {
+   color: #ffbb33;
+}
+
 .copy_right {
    margin-top: 2em;
 }
