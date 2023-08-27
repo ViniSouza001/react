@@ -1,0 +1,10 @@
+dependências
+
+- json-server: responsável pelo "backend fake" para ser possivel fazer requisições em APIs, resgatar e enviar dados
+npm install json-server
+
+- react-icons
+
+- react-router-dom
+
+- uuid: dar um id úncio para cada projeto, dessa forma ser guardado no banco, como tabelas de bancos relacionais
